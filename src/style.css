@@ -1,0 +1,104 @@
+* {
+  list-style-type: none;
+}
+
+body,
+body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > div {
+  box-shadow: 2px 2px 3px 2px rgb(171, 163, 163);
+  margin: 30px;
+  width: 300px;
+}
+
+.work_input {
+  width: 100%;
+}
+
+section,
+form,
+ul li {
+  border-bottom: 0.7px solid rgb(191, 182, 182);
+  padding: 10px 0;
+}
+
+.to_do {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ul li div {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+input {
+  border: none;
+}
+
+input[type=checkbox]:checked + input.strikethrough {
+  text-decoration: line-through;
+}
+
+.strikethrough {
+  width: 100%;
+}
+
+.to_do div,
+.to_do span,
+.work_input input {
+  margin-left: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.clear_list {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(231, 226, 226);
+  color: grey;
+  width: 100%;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+#clear_completed:hover {
+  cursor: pointer;
+}
+
+#task {
+  width: 90%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 786px) {
+  body > div {
+    width: 500px;
+  }
+}
