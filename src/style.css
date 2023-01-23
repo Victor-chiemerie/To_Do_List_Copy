@@ -2,7 +2,8 @@
   list-style-type: none;
 }
 
-body, body > div {
+body,
+body > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,13 +51,9 @@ input[type=checkbox]:checked + input.strikethrough {
 }
 
 .to_do div,
-.work_input input {
-  margin-left: 10px;
-}
-
 .to_do span,
 .work_input input {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 ul {
